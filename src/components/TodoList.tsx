@@ -28,7 +28,7 @@ const TodoList: React.FC<props> = ({
             <span className="todos__heading">Active Tasks</span>
             {todos?.map((todo, index) => (
               <SingleTodo
-                // index={index}
+                index={index}
                 todos={todos}
                 todo={todo}
                 key={todo._id}
@@ -51,7 +51,7 @@ const TodoList: React.FC<props> = ({
             <span className="todos__heading">Completed Tasks</span>
             {completedTodos?.map((todo, index) => (
               <SingleTodo
-                // index={index}
+                index={index}
                 todos={completedTodos}
                 todo={todo}
                 key={todo._id}
